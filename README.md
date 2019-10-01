@@ -1,6 +1,8 @@
 # koala
 Immutable and Lazy loading Golang library to deal with slices
 
+koala never changes your collections
+
 
 ### Installation
 
