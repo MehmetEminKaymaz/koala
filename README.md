@@ -1,4 +1,4 @@
-# koala
+# koala          ![go report](https://goreportcard.com/badge/github.com/MehmetEminKaymaz/koala) ![MIT](https://img.shields.io/github/license/MehmetEminKaymaz/koala) ![issue](https://img.shields.io/github/issues/MehmetEminKaymaz/koala)
 Immutable and Lazy loading Golang library to deal with slices
 
 koala never changes your collections
