@@ -2,9 +2,9 @@ package koala
 
 import "reflect"
 
-
 //Contains returns a boolean value , if exist true else false
 //its also variadic function
+
 func(c Collection) Contains(item ...interface{})Collection{
 
 	t:=Task{ //create task
