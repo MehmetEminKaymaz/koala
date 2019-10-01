@@ -2,8 +2,10 @@ package koala
 
 import "reflect"
 
-func(c Collection) Contains(item ...interface{})Collection{//return a boolean value , if exist true else false
+
+//return a boolean value , if exist true else false
 //its also variadic function
+func(c Collection) Contains(item ...interface{})Collection{
 
 	t:=Task{
 		KindOfTask:"Void",
