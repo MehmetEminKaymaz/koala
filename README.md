@@ -28,7 +28,7 @@ list = list.Add(24,25,26,27) //add 24,25,26 and 27 to the source in one task
 
 ```
 
-### koala.Where
+#### koala.Where
 
 It returns data according to a given condition
 
@@ -41,7 +41,7 @@ list=list.Where(func(x interface{}) bool {
 ```
 
 
-### koala.Foreach
+#### koala.Foreach
 
 ```Go
 
@@ -52,7 +52,7 @@ list=list.Foreach(func(x interface{}) (y interface{}) {
 
 ```
 
-### koala.Contains
+#### koala.Contains
 
 It returns a boolean value , if exist true else false
 
@@ -65,7 +65,7 @@ list = list.Contains(2,3,4,5,6)//variadic function
 
 ```
 
-### koala.SwapTask
+#### koala.SwapTask
 
 It swaps task before execution 
 
@@ -83,7 +83,7 @@ list = list.SwapTask(0,1) // it swaps Add(24) and Add(25) so output should be [2
 
 ```
 
-### koala.Do
+#### koala.Do
 
 Tasks can not be execute before calling Do , so do function executes all task.
 
@@ -100,12 +100,12 @@ result = list.Do().Value() // result = [25,24]
 
 ```
 
-### koala.Value
+#### koala.Value
 
 It returns the result
 
 
-### koala.Cancel
+#### koala.Cancel
 
 It deletes task before execute
 
@@ -124,36 +124,36 @@ list=list.Cancel(2) // SwapTask is cancelled
 
 ```
 
-### koala.LazyCancel
+#### koala.LazyCancel
 
 It deletes task in execution
 
-### koala.ClearTasks
+#### koala.ClearTasks
 
 It clear all tasks before execution
 
-### koala.Lenght
+#### koala.Lenght
 
 It returns lenght of the source //source must be slice or array
 
 
-### koala.Reverse
+#### koala.Reverse
 
 It reverse the source
 
-### koala.RemoveAt
+#### koala.RemoveAt
 
 Remove item from source using index
 
-### koala.ElementAt
+#### koala.ElementAt
 
 Get element from source using index
 
-### koala.Skip
+#### koala.Skip
 
 Skip items in source 
 
-### koala.Take
+#### koala.Take
 
 Take N item from source
 
