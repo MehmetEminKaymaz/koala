@@ -151,6 +151,47 @@ Get element from source using index
 
 Skip items in source 
 
+### koala.Take
+
+Take N item from source
+
+### Example 
+
+```Go
+
+ a:=[]int{1,2,3,4,5,6}
+
+
+    list,err:=koala.From(a)
+    check(err)
+    list=list.Add(10) //add item
+    list=list.Add(11,12,13,14)//its also variadic function
+    list=list.Where(func(x interface{}) bool {
+     return x.(int)>=10
+    })
+    list=list.Reverse()
+
+    list=list.Add(1000)
+
+    list=list.Cancel(1)//it cancels the last task immediately ( list.Add(1000) )
+
+    list=list.SwapTasks(0,1) // swaps list.Add(10) and list.Add(11,12,13,14)
+
+    list=list.Foreach(func(x interface{}) (y interface{}) {
+      y=x.(int)*x.(int)
+      return
+    })
+
+    list=list.Contains(a)
+
+    //list=list.Contains(100,196)
+
+    list=list.Do() // calls all tasks
+
+    fmt.Println(list.Value())
+
+```
+
 
 
 
