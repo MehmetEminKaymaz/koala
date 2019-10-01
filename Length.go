@@ -7,7 +7,7 @@ func(c Collection) Length()int {//len(collection)
 }
 
 
-func (c Collection) ToSlice() interface{}{ //source to slice
+func (c Collection) Value() interface{}{ //source to slice
 
 	return c.Source
 }

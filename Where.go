@@ -26,3 +26,5 @@ func(c Collection) Where(ok func(x interface{}) bool)Collection{//returns data a
 	return c
 
 }
+
+
